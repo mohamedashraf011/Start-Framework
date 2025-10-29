@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Home.module.css";
-import avatar from "../../assets/img/home.svg"
+import avatar from "../../assets/img/home.svg";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
   return (
     <section className={styles.homeSection}>
       <div className={styles.container}>

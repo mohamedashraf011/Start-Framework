@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Contact.module.css";
 import { FaStar } from "react-icons/fa";
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = "Contact";
+  }, []);
   return (
     <section className={styles.contactSection}>
       <div className={styles.container}>

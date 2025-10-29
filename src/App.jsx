@@ -5,6 +5,7 @@ import Home from './Components/Home/Home'
 import About from './Components/About/About'
 import Portfolio from './Components/Portfolio/Portfolio'
 import Contact from './Components/Contact/Contact'
+import NotFound from './Components/NotFound/NotFound'
 
 function App() {
 

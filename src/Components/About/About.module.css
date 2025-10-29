@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 40px 20px;
 }
 
 .container {
@@ -42,11 +43,73 @@
 
 .subtitle {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
     text-align: start;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+
+@media (max-width: 992px) {
+    .aboutSection {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .line {
+        width: 70px;
+    }
+
+    .subtitle {
+        gap: 20px;
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutSection {
+        height: auto;
+        padding: 50px 15px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+
+    .divider {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .line {
+        width: 50px;
+        height: 3px;
+    }
+
+    .star {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: start;
+        gap: 15px;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
 }

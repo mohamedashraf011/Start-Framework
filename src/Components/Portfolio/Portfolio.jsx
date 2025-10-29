@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaPlus, FaStar } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Portfolio.module.css";
@@ -7,6 +7,10 @@ import img2 from "../../assets/img/imgi_2_port2.png";
 import img3 from "../../assets/img/imgi_3_port3.png";
 
 export default function Portfolio() {
+  useEffect(() => {
+    document.title = "Portfolio";
+  }, []);
+
   const images = [img1, img2, img3, img1, img2, img3];
 
   const openModal = (src) => {
